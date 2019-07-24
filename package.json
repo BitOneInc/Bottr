@@ -9,14 +9,17 @@
     "express": "^4.14.0",
     "queue": "^4.0.0",
     "request": "^2.74.0",
-    "socket.io": "^1.4.8",
-    "twilio": "^2.9.2",
+    "socket.io": "^2.0.2",
+    "twilio": "^3.9.0",
     "twit": "^2.2.4",
-    "uuid": "^3.0.0"
+    "uuid": "^3.0.0",
+    "snyk": "^1.173.2"
   },
   "scripts": {
     "lint": "eslint __mocks__ __tests__ lib index.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -61,5 +64,6 @@
   "gitHead": "cf919778840e4ca32f6f53a951bcd6f8a9c01fb3",
   "_id": "bottr@0.1.6",
   "_shasum": "0b3fc3ccbe1311f04665c2569d336ba11b74d0cd",
-  "_from": "bottr@>=0.1.0 <0.2.0"
+  "_from": "bottr@>=0.1.0 <0.2.0",
+  "snyk": true
 }
